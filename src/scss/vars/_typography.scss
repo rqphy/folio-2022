@@ -1,0 +1,22 @@
+$font-family: 'Marcellus', serif;
+
+@mixin typo-heading-l() {
+    font-family: $font-family;
+    font-size: 4.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@mixin typo-heading-s() {
+    font-family: $font-family;
+    font-size: 4rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+@mixin typo-body-m() {
+    font-family: $font-family;
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
