@@ -1,5 +1,9 @@
 @import './vars/index';
 
+body {
+    background-color: var(--color-primary);
+}
+
 .webgl
 {
     position: fixed;
