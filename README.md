@@ -1,20 +1,3 @@
-# ThreeJs Starter
+# Portfolio 2022
 
-An advanced ThreeJs starter inspired by Bruno Simon.
-
-## INSTAL
-```bash
-$ npm install
-```
-
-## USAGE
-
-### START
-```bash
-$ npm run dev
-```
-
-### BUILD
-```bash
-$ npm run build
-```
+My webside needs an update...
