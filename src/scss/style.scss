@@ -1,13 +1,11 @@
 @import './vars/index';
+@import './home/hero.scss';
 
-body {
-    background-color: var(--color-primary);
+html {
+    font-size: 16px;
 }
 
-.webgl
-{
-    position: fixed;
-    top: 0;
-    left: 0;
-    outline: none;
+body {
+    width: 100vw;
+    background-color: var(--color-primary);
 }
