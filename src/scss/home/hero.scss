@@ -6,10 +6,22 @@
     height: 80vh;
     width: 100%;
 
+    @include mq-medium {
+        height: auto;
+        flex-direction: column-reverse;
+        justify-content: start;
+        padding-top: 6rem;
+    }
+
     &__title {
         @include typo-heading-l;
         width: 60%;
         color: var(--color-secondary);
+
+        @include mq-medium {
+            width: 100%;
+            text-align: center;
+        }
 
         span {
             position: relative;
