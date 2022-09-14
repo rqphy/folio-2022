@@ -12,7 +12,23 @@
         color: var(--color-secondary);
 
         span {
-            text-decoration: underline;
+            position: relative;
+            display: inline-block;
+            color: var(--color-primary);
+            // background-color: var(--color-secondary);
+            // padding: 0 1rem;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                transform: scale(1.05);
+                background-color: var(--color-secondary);
+            }
         }
     }
 
