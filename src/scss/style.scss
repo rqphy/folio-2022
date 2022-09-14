@@ -6,6 +6,14 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100vw;
     background-color: var(--color-primary);
+}
+
+.app {
+    width: 100%;
+    max-width: 1040px;
 }
