@@ -1,5 +1,5 @@
 @import './vars/index';
-@import './home/hero.scss';
+@import './home/index.scss';
 
 html {
     font-size: 16px;
@@ -26,6 +26,7 @@ body {
     max-width: 1040px;
     box-sizing: border-box;
     padding: 0 120px;
+    color: var(--color-secondary);
 
     @include mq-medium {
         padding: 0 80px;
@@ -34,4 +35,8 @@ body {
     @include mq-small {
         padding: 0 20px;
     }
+}
+
+h2 {
+    @include typo-heading-s;
 }

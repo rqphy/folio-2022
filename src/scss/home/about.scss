@@ -1,0 +1,13 @@
+.about {
+    &__description {
+        @include typo-body-m;
+        margin-top: 2rem;
+    }
+
+    &__timeline {
+        height: 500px;
+        width: 100%;
+        margin-top: 2rem;
+        background-color: #ff10ff20;
+    }
+}
