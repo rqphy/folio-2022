@@ -10,7 +10,11 @@
 
     &__list {
         width: 70%;
-        margin-top: 4rem
+        margin-top: 4rem;
+
+        @include mq-small {
+            width: 90%;
+        }
     }
 
     &__link {
