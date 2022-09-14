@@ -5,9 +5,15 @@
     }
 
     &__timeline {
-        height: 500px;
-        width: 100%;
+        display: flex;
+        justify-content: center;
         margin-top: 2rem;
-        background-color: #ff10ff20;
+
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 454px;
+        }
     }
 }
