@@ -57,6 +57,20 @@ h2 {
     pointer-events: none;
     z-index: 100;
 
+    picture, img {
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    picture {
+        display: none;
+    }
+
+    img {
+        object-fit: cover;
+    }
+
     &.hovered {
         height: calc(var(--cursor-size) * var(--cursor-hovered_size_coef));
         width: calc(var(--cursor-size) * var(--cursor-hovered_size_coef));
@@ -64,12 +78,17 @@ h2 {
     }
 
     &.name {
-        height: 46vh;
-        width: 32vh;
+        height: 68vh;
+        width: 54vh;
+        top: 40px;
+        left: -120px;
         border-radius: 0;
         transition: height .4s ease-in-out, width .3s ease-in-out, transform .8s ease-out;
         z-index: 1;
         mix-blend-mode: normal;
-        background-color: tomato;
+
+        picture {
+            display: block;
+        }
     }
 }

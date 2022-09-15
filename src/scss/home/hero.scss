@@ -25,13 +25,13 @@
             text-align: center;
         }
 
+
+
         span {
             position: relative;
             display: inline-block;
             color: var(--color-primary);
             cursor: crosshair;
-            // background-color: var(--color-secondary);
-            // padding: 0 1rem;
 
             &::before {
                 content: '';
@@ -43,6 +43,13 @@
                 z-index: -1;
                 transform: scale(1.05);
                 background-color: var(--color-secondary);
+                transition: background .3s ease-out;
+            }
+
+            &:hover {
+                &::before {
+                    background-color: transparent;
+                }
             }
         }
     }
