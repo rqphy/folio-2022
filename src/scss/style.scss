@@ -19,6 +19,7 @@ body {
     align-items: center;
     width: 100vw;
     background-color: var(--color-primary);
+    cursor: none;
 }
 
 .app {
@@ -39,4 +40,25 @@ body {
 
 h2 {
     @include typo-heading-s;
+}
+
+#cursor {
+    --cursor-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: var(--cursor-size);
+    width: var(--cursor-size);
+    border-radius: 50%;
+    background-color: var(--color-secondary);
+    transition: height .4s ease-in-out, width .3s ease-in-out, transform .1s ease-out;
+    will-change: transform height width;
+    pointer-events: none;
+    z-index: 100;
+
+    &.hovered {
+        height: calc(var(--cursor-size) * var(--cursor-hovered_size_coef));
+        width: calc(var(--cursor-size) * var(--cursor-hovered_size_coef));
+        mix-blend-mode: difference;
+    }
 }

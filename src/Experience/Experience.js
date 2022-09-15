@@ -6,6 +6,7 @@ import Debug from './Utils/Debug'
 import Camera from './Camera'
 import Renderer from './Renderer'
 import sources from './sources'
+import Cursor from './Cursor'
 import World from './World/World'
 
 let instance = null
@@ -36,6 +37,7 @@ export default class Experience
         this.camera = new Camera()
         this.renderer = new Renderer()
         this.world = new World()
+        this.cursor = new Cursor()
 
         // Sizes resize event
         this.sizes.on('resize', () =>
@@ -61,6 +63,7 @@ export default class Experience
         this.camera.update()
         this.world.update()
         this.renderer.update()
+        this.cursor.update()
     }
 
     destroy()
