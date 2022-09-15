@@ -56,6 +56,11 @@
         top: 0;
         left: 0;
         overflow: hidden;
+        will-change: transform opacity;
+    }
+
+    picture {
+        transform-origin: top;
     }
 
     img {
