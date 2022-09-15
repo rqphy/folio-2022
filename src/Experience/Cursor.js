@@ -23,7 +23,7 @@ export default class Cursor
         _event.preventDefault()
 
         this.mousePosition.x = _event.clientX
-        this.mousePosition.y = _event.clientY + window.scrollY
+        this.mousePosition.y = _event.clientY
         
     }
 

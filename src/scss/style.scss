@@ -43,8 +43,9 @@ h2 {
 }
 
 #cursor {
-    --cursor-size: 40px;
-    position: absolute;
+    --cursor-size: 20px;
+    --cursor-hovered_size_coef: 3;
+    position: fixed;
     top: 0;
     left: 0;
     height: var(--cursor-size);
