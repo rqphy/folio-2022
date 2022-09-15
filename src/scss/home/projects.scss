@@ -17,6 +17,7 @@
     }
 
     &__project {
+        position: relative;
         height: 100px;
         width: 100px;
         margin-top: -8rem;
@@ -51,6 +52,9 @@
     }
 
     figure {
+        position: absolute;
+        top: 0;
+        left: 0;
         overflow: hidden;
     }
 

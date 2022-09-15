@@ -9,12 +9,12 @@ export const addScrollAnimations = () =>
             {
                 scale:
                 [
-                    ["elInY-100", "elCenterY-100"],
+                    ["elInY", "elCenterY-100"],
                     [0.5, 1],
                 ],
                 opacity:
                 [
-                    ["elInY-100", "elCenterY-100"],
+                    ["elInY", "elCenterY-100"],
                     [0, 1],
                 ]
             }
