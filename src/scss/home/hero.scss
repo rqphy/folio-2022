@@ -15,8 +15,10 @@
 
     &__title {
         @include typo-heading-l;
+        position: relative;
         width: 60%;
         color: var(--color-secondary);
+        z-index: 2;
 
         @include mq-medium {
             width: 100%;
@@ -46,7 +48,9 @@
     }
 
     &__webgl {
+        position: relative;
         height: 100%;
         width: 40%;
+        z-index: 2;
     }
 }

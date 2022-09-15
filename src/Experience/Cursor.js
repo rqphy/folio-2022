@@ -43,10 +43,15 @@ export default class Cursor
             element.addEventListener('mouseover', () =>
             {
                 this.cursor.classList.add('hovered')
+                if(element.classList.contains('name'))
+                {
+                    this.cursor.classList.add('name')
+                }
             })
             element.addEventListener('mouseleave', () =>
             {
                 this.cursor.classList.remove('hovered')
+                this.cursor.classList.remove('name')
             })
         }
     }

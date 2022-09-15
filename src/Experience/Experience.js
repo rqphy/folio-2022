@@ -37,7 +37,7 @@ export default class Experience
         this.camera = new Camera()
         this.renderer = new Renderer()
         this.world = new World()
-        // this.cursor = new Cursor()
+        this.cursor = new Cursor()
 
         // Sizes resize event
         this.sizes.on('resize', () =>
@@ -63,7 +63,7 @@ export default class Experience
         this.camera.update()
         this.world.update()
         this.renderer.update()
-        // this.cursor.update()
+        this.cursor.update()
     }
 
     destroy()

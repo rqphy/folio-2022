@@ -62,4 +62,14 @@ h2 {
         width: calc(var(--cursor-size) * var(--cursor-hovered_size_coef));
         mix-blend-mode: difference;
     }
+
+    &.name {
+        height: 46vh;
+        width: 32vh;
+        border-radius: 0;
+        transition: height .4s ease-in-out, width .3s ease-in-out, transform .8s ease-out;
+        z-index: 1;
+        mix-blend-mode: normal;
+        background-color: tomato;
+    }
 }
