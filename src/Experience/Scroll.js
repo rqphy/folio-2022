@@ -3,7 +3,7 @@ import lax from 'lax.js'
 export const addScrollAnimations = () =>
 {
     lax.addElements(
-        '.laxScale', 
+        '.laxTranslate', 
         {
             scrollY:
             {
@@ -20,6 +20,24 @@ export const addScrollAnimations = () =>
                 opacity:
                 [
                     ["elCenterY-500", "elCenterY-200"],
+                    [0, 1],
+                ],
+            }
+        }
+    )
+    lax.addElements(
+        '.laxScale', 
+        {
+            scrollY:
+            {
+                scale:
+                [
+                    ["elCenterY-200", "elCenterY-100"],
+                    [0.9, 1],
+                ],
+                opacity:
+                [
+                    ["elCenterY-200", "elCenterY"],
                     [0, 1],
                 ],
             }
