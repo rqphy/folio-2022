@@ -21,6 +21,7 @@
         height: 100px;
         width: 100px;
         margin-top: -8rem;
+        cursor: pointer;
 
         &:first-child {
             margin-top: 0;
@@ -29,11 +30,15 @@
         &[data-orientation="portrait"] {
             width: #{40vw * 0.58};
             height: #{40vw * 0.8};
+            max-width: 250px;
+            max-height: 346px;
         }
 
         &[data-orientation="landscape"] {
             width: 40vw;
             height: #{40vw * 0.58};
+            max-width: 432px;
+            max-height: 250px;
 
             + [data-orientation="landscape"] {
                 margin-top: 0;
