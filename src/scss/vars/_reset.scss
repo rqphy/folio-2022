@@ -49,5 +49,8 @@ table {
 
 * {
 	box-sizing: border-box;
-	cursor: none;
+
+	&::selection {
+		background-color: #E76F51;
+	}
 }
