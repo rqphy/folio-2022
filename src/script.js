@@ -5,18 +5,6 @@ import lax from 'lax.js'
 
 const experience = new Experience(document.querySelector('canvas.hero__webgl'))
 
-// window.addEventListener('load', () =>
-// {
-//     lax.init()
-
-//     lax.addDriver('scrollY', () =>
-//     {
-//         return window.scrollY
-//     })
-
-//     addScrollAnimations()
-// })
-
 window.onload = function () {
     lax.init()
 

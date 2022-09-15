@@ -1,10 +1,5 @@
 import lax from 'lax.js'
 
-// skewX: [
-//     ["elInY", "elCenterY"],
-//     [0, 1],
-//   ]
-
 export const addScrollAnimations = () =>
 {
     lax.addElements(
@@ -14,7 +9,12 @@ export const addScrollAnimations = () =>
             {
                 scale:
                 [
-                    ["elInY", "elCenterY"],
+                    ["elInY-100", "elCenterY-100"],
+                    [0.5, 1],
+                ],
+                opacity:
+                [
+                    ["elInY-100", "elCenterY-100"],
                     [0, 1],
                 ]
             }
