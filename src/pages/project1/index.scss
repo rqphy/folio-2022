@@ -1,1 +1,26 @@
 @import '/src/scss/style.scss';
+@import './hero.scss';
+
+.app {
+    padding: 0;
+}
+
+.title {
+    @include typo-heading-l;
+    text-align: center;
+}
+
+.project {
+    min-height: 100vh;
+    padding: 10vh 120px 0;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+
+    @include mq-medium {
+        padding: 10vh 80px;
+    }
+
+    @include mq-small {
+        padding: 10vh 20px;
+    }
+}
