@@ -1,3 +1,4 @@
 [[redirects]]
-  from = "/pages/home"
-  to = "/"
+  from = "/"
+  to = "/pages/home"
+  status = 200
