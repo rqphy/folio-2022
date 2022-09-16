@@ -1,4 +1,3 @@
-import './scss/style.scss'
 import Experience from './Experience/Experience'
 import { addScrollAnimations } from './Experience/Scroll'
 import lax from 'lax.js'
@@ -15,4 +14,5 @@ window.onload = function () {
 
     // Add animation bindings to elements
     addScrollAnimations()
-  }
+}
+console.log('testtt')
