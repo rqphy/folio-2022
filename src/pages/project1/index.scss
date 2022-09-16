@@ -1,9 +1,14 @@
 @import '/src/scss/style.scss';
 @import './hero.scss';
 
+body {
+    background-color: var(--color-secondary);
+}
+
 .app {
     padding: 0;
 }
+
 
 .title {
     @include typo-heading-l;
