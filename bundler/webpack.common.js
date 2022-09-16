@@ -2,27 +2,49 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const path = require('path')
 
+const pages = [
+    'home',
+    'project1',
+    // 'project2',
+]
+
 module.exports = {
-    entry: path.resolve(__dirname, '../src/script.js'),
+    entry: pages.reduce((config, page) =>
+    {
+        config[page] = path.resolve(__dirname, `../src/pages/${page}/${page}.js`)
+        return config
+    }, {}),
     output:
     {
         hashFunction: 'xxhash64',
         filename: 'bundle.[contenthash].js',
         path: path.resolve(__dirname, '../dist')
     },
+    optimization:
+    {
+        splitChunks:
+        {
+            chunks: "all"
+        }
+    },
     devtool: 'source-map',
-    plugins:
-    [
+    plugins: [].concat(
+        pages.map(
+            page =>
+                new HtmlWebpackPlugin({
+                    inject: true,
+                    template: path.resolve(__dirname, `../src/pages/${page}/index.html`),
+                    minify: true,
+                    filename: `pages/${page}/index.html`,
+                    chunks: [page]
+                })
+        ),
         new CopyWebpackPlugin({
             patterns: [
                 { from: path.resolve(__dirname, '../static') }
             ]
         }),
-        new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, '../src/index.html'),
-            minify: true
-        })
-    ],
+    ),
     module:
     {
         rules:
