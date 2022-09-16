@@ -1,6 +1,7 @@
-import './scss/style.scss'
-import Experience from './Experience/Experience'
-import { addScrollAnimations } from './Experience/Scroll'
+import './index.scss'
+console.log('home')
+import Experience from '/src/Experience/Experience'
+import { addScrollAnimations } from '/src/Experience/Scroll'
 import lax from 'lax.js'
 
 const experience = new Experience(document.querySelector('canvas.hero__webgl'))
@@ -15,4 +16,4 @@ window.onload = function () {
 
     // Add animation bindings to elements
     addScrollAnimations()
-  }
+}
